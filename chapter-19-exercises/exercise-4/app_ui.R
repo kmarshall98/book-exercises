@@ -5,6 +5,15 @@ library("shiny")
 #   You will use `shinyUI()` to render this variable (bottom of the script)
 # Give the layout a title of "Income Inequality".
 # The layout should include the following elements:
+my_ui <- navbarPage(
+  shinyUI(),
+  tabPanel("Introduction"),
+  titlePanel("income Inequality"),
+  p("The below diagram was created by the New York Times to 
+    illustrate the increasing level of inequality inthe US."),
+  img(/www/inequality.png),
+  p(![https://www.nytimes.com/interactive/2017/08/07/opinion/leonhardt-income-inequality.html])
+)
 
 
   # A `tabPanel()` with a title "Introduction" to represent the first tab.
